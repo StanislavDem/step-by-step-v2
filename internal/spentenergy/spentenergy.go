@@ -67,7 +67,7 @@ func RunningSpentCalories(steps int, weight, height float64, duration time.Durat
 	durationMinutes := duration.Minutes()
 
 	// Расчёт калорий (weight * meanSpeed * durationInMinutes) / minInH
-	calories := (weight * speed * durationMinutes) / float64(minInH)
+	calories := (weight * speed * durationMinutes) / minInH
 
 	return calories, nil
 }
